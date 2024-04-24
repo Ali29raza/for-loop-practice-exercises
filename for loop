@@ -1,0 +1,62 @@
+# After flipping a coin 10 times you got this result,
+# result = ["heads","tails","tails","heads","tails","heads","heads","tails","tails","tails"]
+# Using for loop figure out how many times you got heads
+
+# result = ["heads","tails","tails","heads","tails","heads","heads","tails","tails","tails"]
+# no_of_heads = 0
+# for r in result:
+#     if r == "heads":
+#         no_of_heads =no_of_heads +1
+# print(no_of_heads)
+
+# Print square of all numbers between 1 to 10 except even numbers
+# for square in range(1 , 11):
+#     if square %2==0:
+#         continue
+#     print(square**2)
+
+# Your monthly expense list (from Jan to May) looks like this,
+# expense_list = [2340, 2500, 2100, 3100, 2980]
+# Write a program that asks you to enter an expense amount and program should tell
+# you in which month that expense occurred. If expense is not found
+# then it should print that as well.
+
+# month=["jan" , "feb" ,"mar", "apr"]
+# expense_list = [2340, 2500, 2100, 3100, 2980]
+# monthly_exp =int(input("please enter your monthly expanse: "))
+# for e in range(len(expense_list)):
+#     if expense_list[e]==monthly_exp:
+#         print(month[e])
+#
+# Lets say you are running a 5 km race. Write a program that,
+#
+# Upon completing each 1 km asks you "are you tired?"
+# If you reply "yes" then it should break and print "you didn't finish the race"
+# If you reply "no" then it should continue and ask "are you tired" on every km
+# If you finish all 5 km then it should print congratulations message
+
+# km=0
+# for r in range(1 , 6):
+#     km=km+1
+#     print(f"you have completed:{km}km")
+#     if r!=5:
+#         q=input("are you tired? ")
+#     if q=="yes".lower():
+#         print("you didn't finish the race")
+#         break
+#     if r==5:
+#         print("congratulations! you have completed the race")
+
+# Write a program that prints following shape
+#
+# *
+# **
+# ***
+# ****
+# *****
+
+# for row in range(0,5):
+#     for col  in range(5):
+#         if col==0 or (col==1 and row!=0) or (col==2 and row>=2) or (col==3 and row>=3) or (col==4 and row>=4) :
+#             print("*" , end="")
+#     print()
